@@ -17,13 +17,15 @@
         
         .sign {
         color: lightgrey;
-        
+        padding-bottom: 1em;
         }
         header{
-            border-bottom: 12px double black;
-            margin-bottom: 1em;
+            
+            margin-bottom: 2em;
             text-align: center;
         }
+       
+
         legend{
         border: 0;
             padding: 0;
@@ -57,6 +59,8 @@
         
         }
         input[type="text"],
+        input[type="tel"],
+        input[type="email"],
         select,
         textarea,
         button {
@@ -75,7 +79,7 @@
         }
         
         .contact  {
-            margin-bottom: 1em;
+            margin-bottom: 2em;
         }
         input[name="user_zip"] {
             max-width: 50%;
@@ -130,9 +134,25 @@
             input[type="radio"]:checked+label {
                 font-weight:bold;
                 
+
+               
                 }
+                .section {
+                    text-align: center;
+                    border-bottom: 12px double black;
+                    margin-bottom: 2em;
+                }
+                form{
+                    width: 99%; /* Great for mobiles*/
+                    max-width: 750px; /*Great for tablets and desktops*/
+                    padding: 0 1em; /*allows some breathing space down the sides especially for mobile*/
+                    margin: 0 auto; /*Nicely centers everything no matter the screen width*/
+                    }
             @media(min-width:768px) {
 
+
+
+                
                 .fields .flex {
                   flex-direction: row;
                 }
