@@ -1,0 +1,120 @@
+
+    * {
+        box-sizing: border-box;
+        
+        }
+        
+        .code {
+        color: white ;
+        background-color: black;
+        margin-top: 0;
+        padding-top: 1em;
+        padding-bottom: 1em;
+        }
+        
+        .sign {
+        color: lightgrey;
+        
+        }
+        header{
+            border-bottom: 12px double black;
+            margin-bottom: 2em;
+            text-align: center;
+        }
+        legend{
+        border: 0;
+            padding: 0;
+            font-weight: bold;
+            font-size: 1.5em;
+            text-align: left;
+            margin-bottom: 10px;
+        }
+        .fields {
+            border-bottom: 3px solid black;
+            text-align: left;
+            display: flex;
+        padding-bottom: 2em;
+        margin-bottom: 2em;
+        } 
+        input[type="checkbox"],
+        input[type="button"],
+        input[type="radio"] {
+        cursor: pointer;
+        
+        }
+        input[type="text"],
+        select,
+        textarea,
+        button {
+        width: 100%;
+        padding: 15px;
+        background: #efefef;
+        border: none;
+        border-radius: .3em;
+        border-bottom: 3px solid rgba(0,0,0,0.05);
+        outline: 0;
+        
+        }
+        ::placeholder {
+        text-align: right;
+           
+        }
+        
+        .contact ~ label {
+            margin-bottom: 1em;
+            margin-top: 1em;
+        }
+        input[name="user_zip"] {
+            width: 50%;
+           
+        
+        }
+        select {
+        
+            
+        color: grey;
+        }
+        .news ~ input {
+        margin: 1em;
+        
+        }
+        span {
+        margin-bottom: 1em;
+        
+        }
+        textarea,
+        button {
+        margin-top: 1.5em;
+        
+        }
+        input[ value="javascript_news"],
+        input[value ="plain_radio"] {
+            margin-bottom: 31px;
+            
+            
+        }
+        button {
+        color: white;
+            background-color: #52bab3;
+            padding: 23px;
+        }
+            textarea {
+                padding: 3em;
+            }
+            footer{
+                text-align: center;
+                color: lightgray;
+                text-transform: capitalize;
+            }
+            input:focus,
+            textarea:focus {
+            border-color:tomato;
+            outline: transparent;
+            }
+            
+            input[type="checkbox"]:checked + label,
+            input[type="radio"]:checked+label {
+                font-weight:bold;
+                
+                }
+            
