@@ -21,7 +21,7 @@
         }
         header{
             border-bottom: 12px double black;
-            margin-bottom: 2em;
+            margin-bottom: 1em;
             text-align: center;
         }
         legend{
@@ -39,7 +39,7 @@
 .fields label,
 .fields input,
 .fields select {
-    margin-bottom: 10px;
+    margin-bottom: 16px;
 }
 
 
@@ -47,8 +47,8 @@
             border-bottom: 3px solid black;
             text-align: left;
             
-        padding-bottom: 2em;
-        margin-bottom: 2em;
+        padding-bottom: 3em;
+        margin-bottom: 3em;
         } 
         input[type="checkbox"],
         input[type="button"],
@@ -71,12 +71,11 @@
         }
         ::placeholder {
         text-align: right;
-           
+           font-style: italic;
         }
         
-        .contact ~ label {
+        .contact  {
             margin-bottom: 1em;
-            margin-top: 1em;
         }
         input[name="user_zip"] {
             max-width: 50%;
@@ -119,6 +118,7 @@
                 text-align: center;
                 color: lightgray;
                 text-transform: capitalize;
+                font-style: italic;
             }
             input:focus,
             textarea:focus {
