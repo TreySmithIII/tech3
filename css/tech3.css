@@ -3,6 +3,9 @@
         box-sizing: border-box;
         
         }
+        body {
+            font-family: 'Inria Serif', serif;  
+        }
         
         .code {
         color: white ;
@@ -29,10 +32,21 @@
             text-align: left;
             margin-bottom: 10px;
         }
+.fields .flex {
+    display: flex;
+    flex-direction: column;
+}
+.fields label,
+.fields input,
+.fields select {
+    margin-bottom: 10px;
+}
+
+
         .fields {
             border-bottom: 3px solid black;
             text-align: left;
-            display: flex;
+            
         padding-bottom: 2em;
         margin-bottom: 2em;
         } 
@@ -65,7 +79,7 @@
             margin-top: 1em;
         }
         input[name="user_zip"] {
-            width: 50%;
+            max-width: 50%;
            
         
         }
@@ -101,7 +115,7 @@
             textarea {
                 padding: 3em;
             }
-            footer{
+            .para{
                 text-align: center;
                 color: lightgray;
                 text-transform: capitalize;
@@ -117,4 +131,26 @@
                 font-weight:bold;
                 
                 }
-            
+            @media(min-width:768px) {
+
+                .fields .flex {
+                  flex-direction: row;
+                }
+                .fields input ,
+                .fields select {
+                    flex-grow: 1;
+                    flex-basis: 75%;
+                }
+                .fields label {
+                    flex-basis: 25%;
+                    height:50px;
+                    
+                }
+                input[name="user_zip"] {
+                    max-width: 25%;
+                   
+                
+                }
+
+
+            }
